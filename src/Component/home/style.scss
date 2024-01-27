@@ -1,0 +1,84 @@
+$anti:rgb(241, 195, 135);
+.Home{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: url("../../assets/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    //filter: grayscale(40%);
+    .left-sec{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter: grayscale(0%);
+        //background-color: aquamarine;
+        h1{
+            font-size: 50px;
+            width: 100%;
+            color:$anti;
+            text-align: center;
+            span{
+                color: white;
+            }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        button{
+            padding: 20px 40px;
+            font-size: larger;
+            font-weight: 550;
+            background-color: $anti;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(225, 157, 73);
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .Home{
+        color: white;
+        width: 100%;
+        height: 100vh;
+        background: url("../../assets/bg-mob.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .left-sec{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .Home{
+        .left-sec{
+            h1{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 15px;
+                margin-left: 20px;
+                font-weight: 200;
+            }
+            button{
+                padding: 15px 50px;
+                font-size: smaller;
+                font-weight: 600;
+                background-color: $anti;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10%;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.Service{
+    height: 100vh;
+    background-color: rgb(233, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mid{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        //background-color: aqua;
+        h1{
+            font-size: 50px;
+            //color: #9b7d56;
+            opacity: 0.8;
+        }
+        .all{
+            display: flex;
+            width: 100%;
+            .cards{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .card{
+                    background-color: white;
+                    width: 40%;
+                    padding: 20px;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                    }
+                    .text{
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        h2{
+                            font-size: 30px;
+                            font-weight: 500;
+                        }
+                        h5{
+                            width: 100%;
+                            font-size: medium;
+                            font-weight: 400;
+                        }
+                        .read-more{
+                            font-size: x-large;
+                            color: rgb(222, 158, 73);
+                        }
+                        .read-more:hover{
+                            cursor: pointer;
+                            color: rgb(238, 154, 45);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1150px) {
+    .Service{
+        height: 200vh;
+        .mid{
+            justify-content: center;
+            align-items: center;
+            .all{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .cards{
+                    margin-bottom: 5%;
+                    .card{
+                        img{
+                            height: 30%;
+                            width: 100%;
+                            overflow: hidden;
+                        }
+                    }
+                }
+           }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .Service{
+        height: 250vh;
+        .mid{
+            margin-top: 300px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .all{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .cards{
+                    display: flex;
+                    align-items: center;
+                    .card{
+                        margin-bottom: 10px;
+                        height: 40%;
+                        width: 70%;
+                        overflow: hidden;
+                        img{
+                            height: 60%;
+                            width: 100%;
+                            overflow: hidden;
+                        }
+                        h5{
+                            display: none;
+                        }
+                    }
+                }
+           }
+        }
+    }
+}
